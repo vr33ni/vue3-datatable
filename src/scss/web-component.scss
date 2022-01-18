@@ -1,0 +1,150 @@
+// Import Custom Variables (Overrides Default Bootstrap Variables)
+@import "variables.scss";
+@import 'bootstrap/scss/bootstrap.scss';
+// Import Custom Mixins and Components
+
+//multiselect custom
+.multiselect__option--highlight, .multiselect__option--highlight {
+  background: $light !important;
+  color: $dark !important;
+}
+
+.multiselect__option--selected, .multiselect__option--selected, .multiselect__tag{
+  background: $primary  !important;
+  color: $white !important;
+}
+
+.multiselect__tag {
+  margin-right: ($spacer * .25) !important;
+  margin-bottom: 0 !important;
+  padding: ($spacer * .25) ($spacer * 1.25) ($spacer * .25) ($spacer * .25) !important
+}
+
+.multiselect {
+  width: 50% !important;
+  }
+
+//date picker custom
+.v3dp__datepicker {
+  --elem-selected-bg-color: #478F7C;
+  --elem-hover-bg-color:#478F7C;
+  --vdp-border-radius: 0px;
+  --vdp-elem-border-radius:0px;
+}
+
+//button custom
+.btn-sm-full-width {
+width: 100% !important;
+background-color: #478F7C !important;
+color: white !important;
+}
+
+//text area custom
+.textarea-sm-width{
+width: 50% !important;
+}
+
+// bootstrap table modification to look like cards in mobile view
+table {
+font-size: 12px;
+border: 0;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 100%;
+
+thead {
+  display: none;
+}
+
+tr {
+  display: block;
+  border: 1px solid grey;
+  padding: 1em 1em .5em;
+
+  & + tr {
+    margin-top: .625em;
+  }
+}
+
+td {
+  display: flex;
+  justify-content: space-between;
+  // align-items: flex-end;
+  border-bottom: 1px solid grey;
+  font-size: 1em;
+  line-height: 1.35em;
+
+  &:before {
+    content: attr(data-label);
+    font-size: .90em;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 45%;
+    color: #545454;
+  }
+
+  & + td {
+    margin-top: .8em;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+}
+
+@media screen and (min-width: 720px) {
+.multiselect {
+  width: 100% !important;
+}
+
+.v3dp__datepicker {
+  width: 100% !important;
+}
+
+.btn-sm-full-width {
+  width: auto !important;
+  background-color: transparent !important;
+  color: #478F7C !important;
+}
+
+.textarea-sm-width{
+  width: 100% !important;
+}
+
+table {
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    display: table-row;
+    border: 0;
+  }
+
+  th {
+    font-size: .9em;
+    text-transform: uppercase;
+  }
+
+  td {
+    display: table-cell;
+
+    &:before {
+      display: none;
+    }
+
+    &:last-child {
+      align-items: flex-end;
+      // border-bottom: 1px solid grey;
+      box-shadow: inset 0 0 0 9999px #F9F9F9;
+    }
+  }
+
+}
+
+}
+
+

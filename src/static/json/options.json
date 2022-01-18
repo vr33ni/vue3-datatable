@@ -1,0 +1,13 @@
+{
+  "expirationDate" : {
+    "maxDate": "2030-01-01",
+    "maxDateForStoringInDB": "2030-01-01T00:00:00Z"
+   },
+  "sampleCustomer" : {
+  "customerID":92,
+  "customer":"abc",
+  "emailDomain":"abc.com",
+  "date":"2030-01-01T00:00:00Z",
+  "dropdown":[{"id":773,"customerID":92,"value":"3D225","isObsolete":false}]
+   }
+ }

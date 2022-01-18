@@ -1,0 +1,33 @@
+// Override Bootstrap default variables here
+
+// Color Variables
+
+// Bootstrap Color Overrides
+$primary: #478f7c !default;
+$secondary: #ab377a !default;
+$success: #aec067 !default;
+$info: #928285 !default;
+$warning: #f07f3c !default;
+$danger: #e30034 !default;
+$light: #d7d7d7 !default;
+$dark: #263238 !default;
+$min-contrast-ratio: 3.5;
+$badge-color: $dark;
+
+//custom color
+$black-link: #263238 !default;
+$black: #000 !default;
+$white: #fff !default;
+$primary-2: #5ea290;
+$alert-bg-level: 0 !default;
+$alert-color-level: 10 !default;
+$blockquote-small-color: $light !default;
+$tooltip-bg: $light !default;
+$tooltip-color: $black !default;
+$table-bg-level: 0 !default;
+$table-border-level: 10 !default;
+$table-head-bg: $light !default;
+$table-head-color: $black !default;
+$table-dark-color: $white !default;
+$table-dark-bg: $dark !default;
+
